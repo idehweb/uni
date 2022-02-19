@@ -1,0 +1,50 @@
+page-list {
+.widthLess{
+    width: 30px;
+    float: right;
+    height: 30px;
+    margin-left: 10px;
+}
+.blocv{
+    display: block;
+    margin:auto;
+}
+.block{
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.hidden{
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+  //  margin-bottom: 10px;
+}
+.fghds{
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+.overFlowhidden{
+    overflow: hidden;
+}
+.padding{
+    padding: 10px;
+}
+.sdfgh{
+    margin-top: -5px;
+}
+ion-icon[name="trash"]{
+    margin-left: 0;
+    color: #f90f0f;
+}
+.sdfgh.hhh{
+    background-color: #fff;
+}
+
+}

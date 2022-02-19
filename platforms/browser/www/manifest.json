@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "tenwich",
+  "short_name": "tenwich",
+  "version": "com.artmees.tenwich",
+  "description": "buy sandwich",
+  "author": "hamid alinia",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#4e8ef7"
+}

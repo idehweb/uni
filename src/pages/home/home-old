@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+
+    <button ion-button menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+
+    </ion-title>
+    <ion-buttons left>
+      <button ion-button left solid on-click="goToCart()">
+        <ion-icon name="cart"></ion-icon>
+       لیست سفارش
+      </button>
+    </ion-buttons>
+
+
+ 
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page1">
+    <button class="sdfgh" ion-button block *ngIf="tryAgain" (click)="try_again()">
+        <ion-icon name="refresh"></ion-icon>
+        <span>
+          تلاش دوباره
+        </span>
+      </button>
+    <ion-spinner name="bubbles" class="blocv" *ngIf="showLoader"></ion-spinner>
+  <ion-card *ngFor="let item of items">
+    <ion-list class="qwerlkjhg">
+      <div style="width:100%;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
+        <img on-click="goToSingle(item)" src="{{item.img}}" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+        />
+      </div>
+      <ion-item id="home-list-item-container2" on-click="goToSingle(item)">
+        <div id="home-markdown5" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            {{item.foodName}}
+          </p>
+          <div class="price">
+            {{item.price_html}}
+          </div>
+        </div>
+      </ion-item>
+      <ion-item color="assertive">
+        <button ion-button class="qwertty" color="positive" block icon-left on-click="addToCart(item, count, sosCount)">
+          <ion-icon name="add"></ion-icon>
+          افزودن به لیست سفارش
+        </button>
+        <button ion-button class="qwertty" color="positive" block icon-left on-click="goToBuy(item)">
+          <ion-icon name="cart"></ion-icon>
+          یدونه میخوام!
+        </button>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>

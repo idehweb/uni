@@ -1,0 +1,25 @@
+<ion-menu [content]="mainContent" side="right">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        فهرست
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" on-click="goToList()" id="menu-list-item1">
+        سفارش های قبلی من
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToAdvice()" id="menu-list-item2">
+          انتقادات و پیشنهادات
+        </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToAbout()" id="menu-list-item2">
+        درباره تن ویچ
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

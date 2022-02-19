@@ -1,0 +1,325 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: rtl;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #f90f0f,
+  secondary:  #f9a50e,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+@font-face {
+  font-family: iransansbold;
+  src: url($font-path+"/IRANSansWeb.eot");
+  src: url($font-path+"/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url($font-path+"/IRANSansWeb.woff") format("woff"),  url("../assets/fonts/IRANSansWeb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
+@font-face
+{
+ font-family:nyj;
+src: url($font-path+"/yekannumbers.eot?#") format("eot"),  /* IE6–8 */
+    url($font-path+"/yekannumbers.woff") format("woff"),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url($font-path+"/yekannumbers.ttf") format("truetype");  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+//@import "roboto";
+//@import "noto-sans";
+$font-family-md-base: "iransansbold";
+$font-family-ios-base: "iransansbold";
+$font-family-wp-base: "iransansbold";
+.price{
+  font-family: "nyj","iransansbold" !important;
+}
+.loading-wrapper{
+  direction: rtl;
+}
+ion-img {
+  background: rgba(255, 255, 255, 0) !important;
+}
+.button-inner {
+ 
+  direction: rtl;
+}
+.action-sheet-md .action-sheet-title {
+  text-align: right !important;
+  direction: rtl;
+} 
+.guid-wrapper{
+  border: 1px solid #00beb7;
+  border: 0px solid #00beb7;
+  padding: 10px;
+  background-color:rgba(0, 190, 183, 0.25);
+  background-color:#fff;
+}
+.guid{
+  margin-top:10px; 
+  text-align: justify;
+  color: #6f00be;
+  color: #f8a02e;
+  color: #464646;
+  color: #307b5c;
+} 
+.action-sheet-group.action-sheet-group-cancel{
+  display: none;
+}
+.ion-icon-label{
+  position: absolute;
+  float: right;
+  right: 0;
+  margin: 0 !important;
+  top: 45px;
+  color: #9ebdbb !important;
+  color:#ffffff !important;
+}
+.padr,.padr .select-placeholder.select-text{
+  padding-right: 30px;
+}
+.toolbar-background-md {
+  background: #ffffff !important;
+}
+.padr .select-text{
+  padding-right: 30px !important;
+}
+// .item-input-has-value ion-label{
+//   color:#00beb7 !important;
+// }
+.item-input-has-value ion-icon,
+.item-input-has-value .ion-icon-label{   
+color:#00fff6 !important;
+}
+.focus-outline :focus{  
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #00beb7 !important;
+  -webkit-box-shadow: inset 0 -1px 0 0 #00beb7 !important;
+  box-shadow: inset 0 -1px 0 0 #00beb7 !important;
+}
+.toolbar-title {
+
+  text-overflow: clip !important;
+}
+button.question{
+  float: left;
+    margin: 0px;
+    color: #fff;
+    padding: 0;
+    width: 20px;
+    margin-top: 3px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f9a02e;
+} 
+.button-clear-md{
+  color: #f9a02e !important;
+}
+ion-icon.ion-md-trash{
+color: #c34646;
+}
+ion-icon.ion-md-create{
+  color: #bb9e50;
+}
+button.eye{
+  float: left;
+  margin: 0 !important;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 19px !important;
+}
+.bggradiant{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54b0a5+0,017793+100 */
+background: #54b0a5; /* Old browsers */
+background: -moz-linear-gradient(top, #54b0a5 0%, #017793 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #54b0a5 0%,#017793 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #54b0a5 0%,#017793 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b0a5', endColorstr='#017793',GradientType=0 ); /* IE6-9 */
+}
+ion-label {
+  font-weight: bold;
+}
+.item-md {
+
+  background-color: rgba(255, 255, 255, 0) !important;
+  }
+  ion-title {
+    background-color: #019587;
+  }
+  .toolbar-title-md {
+    color: #ffffff !important;
+}
+.text-input::-moz-placeholder {
+  color: #d6d6d6 !important;
+}
+
+.text-input:-ms-input-placeholder {
+  color: #d6d6d6 !important;
+}
+
+.text-input::-webkit-input-placeholder {
+  text-indent: 0;
+  color: #d6d6d6 !important;
+}
+
+.item-input-has-focus .label-ios[floating],  .input-has-focus .label-ios[floating],  .item-input-has-value .label-ios[floating], .input-has-value .label-ios[floating] 
+, .item-input-has-focus .label-md[floating],  .input-has-focus .label-md[floating], .item-input-has-value .label-md[floating], .input-has-value .label-md[floating]{
+ 
+  color: #00fff6 !important;
+}
+.fontweigtnormal{
+  font-weight: normal
+}
+.select-md .select-icon .select-icon-inner {
+  color: #fff !important;
+}
+.select-md .select-placeholder {
+  color: #000 !important;
+}
+.tabs-md .tab-button[aria-selected=true] {
+  color: #000000 !important;
+  padding: 0;
+  background-color: #198096 !important;
+}
+.tabs-md .tab-button {
+
+  background-color: #4eaca3 !important;
+  color: #fff !important;
+}
+.item-md p{
+  color: #d8d8d8 !important;
+}
+.action-sheet-md .action-sheet-button{
+  border-bottom: 1px solid #2b6b00;
+}
+.list-md > .item-block:last-child ion-label, .list-md > .item-block:last-child .item-inner, .list-md > .item-wrapper:last-child ion-label, .list-md > .item-wrapper:last-child .item-inner {
+  color: #000;
+}
+.toast-message{
+  direction: rtl;
+  text-align: right;
+}
+.ion-md-arrow-back:before {
+  content: "\f287";
+}
+.card {
+  background: rgba(255, 255, 255, 0.45) !important;
+}
+.rtl{
+  direction: rtl;
+}
+.alert-md .alert-head h2.alert-title {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-align: right !important;
+}
+.alert-message {
+  text-align: right;
+}
+.ion-ios-arrow-back:before {
+content:"\f3d1" !important;
+}
+.item-ios ion-thumbnail img,.item-md ion-thumbnail img{
+  width: 50px !important;
+  height: 50px !important;
+}
+.item-md ion-thumbnail,.item-ios ion-thumbnail {
+  min-width: 50px !important;
+  min-height: 50px !important;
+}
+.bar-button-ios,.item-ios .item-button,.button-block-ios {
+  padding: 0 12px !important;
+  border-radius: 35px !important;
+}
+.list-ios{
+  margin: -1px 0 15px !important;
+}
+.card-ios{
+  box-shadow: none !important;
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+  border-bottom: 0 solid #c8c7cc !important;
+}
+.item-input-has-value ion-label {
+  color: #000000 !important;
+  font-weight: normal;
+}
+.toolbar-title {
+
+  direction: rtl !important;
+}

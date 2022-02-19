@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-title>
+      نظر سنجی
+    </ion-title>
+
+
+
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page1">
+  <ion-list *ngFor="let field of items;let i=index">
+    <div *ngIf="field.type=='text'">
+      <ion-item>
+        <ion-label color="primary">{{field.label}}</ion-label>
+        <ion-input [(ngModel)]="answers[field.id]" placeholder="{{field.label}}"></ion-input>
+      </ion-item>
+    </div>
+    <div *ngIf="field.type=='textarea'">
+      <ion-item>
+        <ion-textarea placeholder="{{field.label}}" [(ngModel)]="answers[field.id]"></ion-textarea>
+
+      </ion-item>
+    </div>
+    <div *ngIf="field.type=='radio'">
+
+      <ion-list radio-group [(ngModel)]="answers[field.id]">
+        <ion-item *ngFor="let choice of field.choices;let js=index">
+          <ion-label>{{choice.text}}</ion-label>
+          <ion-radio value="{{choice.text}}" checked></ion-radio>
+        </ion-item>
+      </ion-list>
+
+    </div>
+    <div *ngIf="field.type=='select'">
+      <ion-item>
+        <ion-label>{{field.label}}</ion-label>
+        <ion-select [(ngModel)]="answers[field.id]">
+          <ion-option *ngFor="let choice of field.choices" value="{{choice.value}}">{{choice.text}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <!-- <div *ngIf="field.type=='checkbox'">
+      <ion-list >
+
+        <ion-item *ngFor="let choice of field.choices">
+          <ion-label>{{choice.text}}</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </div> -->
+  </ion-list>
+  <button ion-button full block (click)="submit()">ثبت</button>
+
+</ion-content>
